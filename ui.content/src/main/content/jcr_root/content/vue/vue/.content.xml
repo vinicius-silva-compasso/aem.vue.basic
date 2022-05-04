@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-04-16T21:26:43.354-03:00"
+        cq:lastModified="{Date}2022-05-04T13:51:47.497-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/vue/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -108,63 +108,12 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="vue/components/checkbox-vue"
                     field=" meu input"/>
-                <customclasses
-                    jcr:created="{Date}2022-04-16T21:26:43.346-03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-16T21:26:43.346-03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="vue/components/customclasses"/>
-                <text
-                    jcr:created="{Date}2022-04-12T00:31:52.324-03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-12T00:37:54.006-03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="vue/components/text"
-                    text="&lt;h1>&amp;nbsp; aem.vue.basic&lt;/h1>&#xd;&#xa;"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="10"
-                            width="4"/>
-                    </cq:responsive>
-                </text>
-                <container_1337994141
-                    jcr:created="{Date}2022-04-16T20:19:07.719-03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-16T20:19:07.719-03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="vue/components/container">
-                    <checkbox
-                        jcr:created="{Date}2022-04-16T20:19:16.015-03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-04-16T20:19:16.015-03:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="vue/components/checkbox"/>
-                </container_1337994141>
-                <container
-                    jcr:created="{Date}2022-04-16T20:20:56.603-03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-04-16T20:20:56.603-03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="vue/components/container">
-                    <checkbox
-                        jcr:created="{Date}2022-04-16T20:21:05.573-03:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-04-16T20:21:05.573-03:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="vue/components/checkbox"/>
-                </container>
             </responsivegrid>
         </root>
         <image jcr:primaryType="nt:unstructured">
             <file/>
         </image>
     </jcr:content>
+    <_x0034_04/>
+    <home/>
 </jcr:root>
