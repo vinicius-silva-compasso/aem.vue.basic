@@ -3,12 +3,15 @@ import Text from './components/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 import Image from './components/Image/Image'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
   MapTo
 } from '@mavice/aem-vue-editable-components'
+import CustomHeader from './components/CustomHeader/CustomHeader'
+import NotFound from './components/NotFound/NotFound'
 
 MapTo('vue/components/page')(withComponentMappingContext(AppPage))
 
@@ -31,6 +34,9 @@ MapTo('vue/components/checkbox')(CheckBox, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/header')(Header, EditConfig)
+
+// Footer Component Mapping
+MapTo('vue/components/footer')(Footer, EditConfig)
 
 // Image Component Mapping
 MapTo('vue/components/image')(Image, {
@@ -61,3 +67,9 @@ MapTo('vue/components/container')(
     }
   }
 )
+
+// Custom Header Component Mapping
+MapTo('vue/components/custom-header')(CustomHeader)
+
+// Not Found Component Mapping
+MapTo('vue/components/not-found')(NotFound)
