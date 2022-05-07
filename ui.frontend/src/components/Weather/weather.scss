@@ -1,0 +1,44 @@
+#weather {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .city-name {
+    margin: 0;
+    height: 21px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    color: #222222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sub-weather {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 34px;
+      height: 34px;
+    }
+  
+    .temperature {
+      margin: 0;
+      width: 77px;
+      height: 72px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 50px;
+      text-align: center;
+      color: #222222;
+    }
+  }
+}

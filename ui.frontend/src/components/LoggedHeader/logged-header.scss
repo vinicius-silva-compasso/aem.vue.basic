@@ -1,0 +1,24 @@
+header {
+  max-height: 105px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  img {
+    width: 300px;
+  }
+  
+  .weather {
+    width: 122px;
+    height: 89px;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  header {
+    .clock {
+      display: none;
+    }
+  }
+}

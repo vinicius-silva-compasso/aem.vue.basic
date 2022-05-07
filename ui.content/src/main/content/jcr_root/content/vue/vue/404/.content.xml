@@ -51,13 +51,13 @@
                     isDecorative="false"
                     middleText="The page you are looking for might be removed or is temporarily unavailable"
                     upperText="I have bad news for you">
-                    <file/>
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="0"
                             width="24"/>
                     </cq:responsive>
+                    <file/>
                 </not_found>
                 <footer
                     jcr:created="{Date}2022-05-02T23:25:38.324-03:00"
@@ -75,6 +75,7 @@
                             width="24"/>
                     </cq:responsive>
                 </footer>
+                <container/>
             </responsivegrid>
         </root>
     </jcr:content>

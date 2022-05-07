@@ -1,5 +1,5 @@
 <template>
-    <div id="notfound" class="flex-direction">
+    <div id="notfound">
         <div id="container-leftside">
             <img v-if="image" :src="image.src"/>
         </div>

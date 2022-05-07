@@ -4,6 +4,8 @@ import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import LoggedHeader from './components/LoggedHeader/LoggedHeader'
+import LoggedFooter from './components/LoggedFooter/LoggedFooter'
 import Image from './components/Image/Image'
 import {
   withComponentMappingContext,
@@ -12,6 +14,8 @@ import {
 } from '@mavice/aem-vue-editable-components'
 import CustomHeader from './components/CustomHeader/CustomHeader'
 import NotFound from './components/NotFound/NotFound'
+import Login from './components/Login/Login'
+import Home from './components/Home/Home'
 
 MapTo('vue/components/page')(withComponentMappingContext(AppPage))
 
@@ -37,6 +41,12 @@ MapTo('vue/components/header')(Header, EditConfig)
 
 // Footer Component Mapping
 MapTo('vue/components/footer')(Footer, EditConfig)
+
+// Logged Header Component Mapping
+MapTo('vue/components/logged-header')(LoggedHeader)
+
+// Logged Footer Component Mapping
+MapTo('vue/components/logged-footer')(LoggedFooter)
 
 // Image Component Mapping
 MapTo('vue/components/image')(Image, {
@@ -73,3 +83,9 @@ MapTo('vue/components/custom-header')(CustomHeader)
 
 // Not Found Component Mapping
 MapTo('vue/components/not-found')(NotFound)
+
+// Login Component Mapping
+MapTo('vue/components/login')(Login)
+
+// Home Component Mapping
+MapTo('vue/components/home')(Home)

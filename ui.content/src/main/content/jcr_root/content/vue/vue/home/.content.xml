@@ -2,12 +2,16 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-05-03T20:38:12.343-03:00"
+        cq:lastModified="{Date}2022-05-06T21:47:49.114-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/vue/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Home"
-        sling:resourceType="vue/components/page">
+        jcr:title="home"
+        sling:resourceType="vue/components/page"
+        pageTitle="Compass - Home"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
@@ -18,35 +22,73 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <header
-                    jcr:created="{Date}2022-05-03T20:36:38.801-03:00"
+                <logged_header
+                    jcr:created="{Date}2022-05-06T21:44:39.465-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-03T20:38:12.337-03:00"
+                    jcr:lastModified="{Date}2022-05-06T21:45:54.648-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="vue/components/header"
-                    title="Home">
+                    sling:resourceType="vue/components/logged-header"
+                    pageLogo="/content/dam/vue/compassuol-logo-min.png">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="0"
                             width="24"/>
                     </cq:responsive>
-                </header>
-                <footer
-                    jcr:created="{Date}2022-05-03T20:36:48.253-03:00"
+                </logged_header>
+                <home
+                    jcr:created="{Date}2022-05-06T21:46:32.209-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-03T20:36:48.253-03:00"
+                    jcr:lastModified="{Date}2022-05-06T21:47:49.111-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="vue/components/footer">
+                    sling:resourceType="vue/components/home">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="0"
                             width="24"/>
                     </cq:responsive>
-                </footer>
+                    <items jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            en="Our mission is"
+                            pt="Nossa missão é"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            en="to transform the world"
+                            pt="transformar o mundo"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            en="building digital experiences"
+                            pt="construindo experiências digitais"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            en="that enable our client's growth"
+                            pt="que permitam o crescimento dos nossos clientes"/>
+                    </items>
+                </home>
+                <logged_footer
+                    jcr:created="{Date}2022-05-06T21:44:43.835-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-05-06T21:45:34.913-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/logged-footer"
+                    applicationLabel="Application"
+                    continueNavigationLabel="Continuar Navegando"
+                    description="Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar."
+                    logoutLabel="Logout"
+                    refreshLabel="refresh in"
+                    secondsLabel="seconds">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="24"/>
+                    </cq:responsive>
+                </logged_footer>
             </responsivegrid>
         </root>
     </jcr:content>

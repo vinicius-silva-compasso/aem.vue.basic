@@ -1,0 +1,88 @@
+footer {
+  background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .description {
+    width: 530px;
+    height: 35px;
+    text-align: right;
+    color: #FFFFFF;
+  }
+
+  .pipe {
+    width: 61px;
+    height: 0px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+  }
+
+  .seconds-number {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .text-region, .continue-button, .logout-button {
+    color: #FFFFFF;
+    width: 131px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .continue-button, .logout-button {
+    position: absolute;
+    right: 0;
+  }
+  .logout-button {
+    font-weight: 700;
+  }
+  .continue-button {
+    background: #FFFFFF;
+    color: #000000;
+    right: 131px;
+  }
+  .refresh {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  footer {
+    flex-direction: row-reverse;
+
+    .description, .pipe, .text-region {
+      display: none;
+    }
+
+    .logout-button {
+      position: relative;
+      left: 0;
+    }
+    
+    .continue-button {
+      position: relative;
+      right: 0;
+      width: 100%;
+    }
+  }
+}

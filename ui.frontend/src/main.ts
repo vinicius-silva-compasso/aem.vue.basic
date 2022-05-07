@@ -4,8 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
 import { Constants } from '@mavice/aem-vue-editable-components'
+import axios from 'axios'
 
 Vue.use(VueRouter)
+Vue.prototype.$http = axios
 
 document.addEventListener('DOMContentLoaded', () => {
   ModelManager.initialize().then(pageModel => {
@@ -26,6 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
             injectPropsOnInit: true
           }
         })
+      },
+      created () {
+        // TODO - revisar se tem uma forma melhor de fazer isso ... se tem alguma maneira de pegar qual a página de login através de alguma config do AEM
+        if (!AuthoringUtils.isInEditor() && !localStorage.getItem('isLoggedIn') && this.$route.path !== '/content/vue/vue/login.html') {
+          this.$router.push({ path: '/content/vue/vue/login.html' })
+          this.$router.go(0)
+        }
       }
     }).$mount('#spa-root')
   })
